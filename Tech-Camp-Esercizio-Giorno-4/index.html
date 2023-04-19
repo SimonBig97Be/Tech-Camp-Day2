@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- questo link serve a normalizzare gli stili di base degli elementi della pagina, con uno standard più moderno -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <!-- questo link collega il foglio di stile alla pagina -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- titolo visibile sul tab del browser, in alto -->
+    <title>Restaurant Card</title>
+    </head>
+    
+    <body>
+    
+        <!-- PREMESSA: HTML è un linguaggio di markup costituito da tag. Spesso i tag hanno un'apertura e una chiusura come ad esempio: <p></p> 
+            l'apertura è rappresentata da <p> mentre la chiusura ha lo stesso nome ma con un "forward-slash" all'interno: </p>
+        
+            alcuni tag sono "autoconclusivi" (incorporano lo slash all'interno del primo tag stesso, ma alla fine) 
+            e non hanno bisogno di un secondo tag di chiusura come ad esempio: <img />, <br />, <input />
+            -->
+    
+        <div class="container">
+    
+            <div class="card">
+    
+                <img class="card-image"
+                    src="https://media-assets.lacucinaitaliana.it/photos/61fb10cadbe1b5a4409e5649/4:3/w_1064,h_798,c_limit/Carbonara-1600.jpg"
+                    alt="piatto"></img>
+                <div class="card-body">
+                    <h2> Carbonara </h2>
+                    <img class="card-icon" src="./imgs/bowl.png" alt="Carbonara" height="42"></img>
+                    <p class="ingredients"><b>Ingredienti per 4 persone:</b> <span class="list">Guanciale 200 gr, Spaghetti
+                            350 gr,
+                            Uova 4 tuorli, Pecorino 50 gr, Sale q.b., Pepe Nero q.b.</span> </p>
+                    <p class="time"><span class="badge">Preparazione: 20 min</span> </p>
+                </div>
+    
+            </div>
+        </div>
+
+    </body>
+    
+    </html>

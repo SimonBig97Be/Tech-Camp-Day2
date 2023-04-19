@@ -1,0 +1,135 @@
+/* ESERCIZI CSS */
+
+@import url("https://fonts.google.com/specimen/Barlow+Condensed");
+
+/*1) reperisci il font da questa fonte: https://fonts.google.com/specimen/Barlow+Condensed 
+      avrai bisogno di importarlo (trova "use on the web"): usa la modalità proposta con @import e incolla il link qui sotto. 
+      Es. @import url("https://.....")
+*/
+
+body {
+
+  font-family: 'Courier New', Courier, monospace;
+  /* 2) dovrai poi istruire la tua pagina nell'utilizzare proprio quel font per ogni elemento di testo 
+   
+  font-family: .... (guarda nella barra laterale della pagina del font google, ti viene dato l'esatto valore che dovrai usare per il font Barlow Condensed)
+  
+  come funziona la proprietà font-family:
+  https://developer.mozilla.org/en-US/docs/Web/CSS/font-family
+  */
+}
+/* questo è un selettore CSS per il tag "body". 
+ogni selettore usa le parentesi graffe per raggruppare insieme diverse proprietà che daranno lo stile all'elemento selezionato
+ti verrà chiesto di crearne altri, selezionando tag diversi all'occorrenza, ma sempre con parentesi graffe a raggruppare proprietà da applicare all'elemento.
+*/
+
+h2 {
+  margin-top: 0;
+}
+
+h3 {
+  margin-top: 0;
+}
+
+h2{
+  font-weight: 200;
+  font-size: 36px;
+  margin-bottom: 6px;
+}
+
+h3{
+  font-weight: 900;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  text-align: center;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.card{
+  border: 2px;
+  border-color: #ebebeb;
+  background-color: white;
+  display: inline-block;
+  max-width: 300px;
+  border-radius: 6px;
+  overflow: auto;
+  cursor: default;
+  box-shadow: 0px 6px 12px black ;
+}
+
+.card:hover{
+  box-shadow: 0px 12px 24px -8px black ;
+  border-color: black;
+  transform: scale(110%);
+  transition: all 150ms;
+}
+
+.card-image {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.card-body {
+  padding: 16px;
+}
+
+.card-icon {
+  margin-top: 12px;
+}
+
+.ingredients {
+  margin: 0;
+  letter-spacing: 0.6px;
+  line-height: 1.6;
+}
+
+.list {
+  color: #555555;
+}
+
+.time {
+  margin-top: 24px;
+  letter-spacing: 0.6px;
+}
+
+.badge {
+  padding: 4px;
+  background-color: #111111;
+  color: white;
+  border-radius: 3px;
+  line-height: 13px;
+}
+
+
+/* BONUS:
+  - andiamo ad applicare alla card un effetto di hover 
+  (cambio di stato al posizionamento del mouse sopra la card)
+
+  - per questo effetto andremo ad usare sempre la stessa classe card, con aggiunto il selettore :hover senza spazi.
+
+  - all'interno di questo selettore andremo ad impostare un'ombreggiatura diversa dallo stato iniziale, con: 
+  0px di offset orizzontale, 12px di offset verticale, 24px di sfocatura, -8px di spread e colore nero al 20%
+
+  - il colore del bordo dovrà diventare nero
+  e andrà ingrandita la card del 10% tramite l'utilizzo della proprietà "transform" e funzione "scale"
+
+  https://developer.mozilla.org/en-US/docs/Web/CSS/transform
+  https://developer.mozilla.org/en-US/docs/Web/CSS/:hover 
+
+*/
+
+/* EXTRA:
+  per far sì che il cambio di stato (hover) avvenga in modo graduale andremo ad istruire il browser 
+  nel creare una transizione da uno stato all'altro usando la proprietà transition.
+
+  all'interno della transition useremo "all" ad indicare che 
+  qualsiasi proprietà che cambierà nel tempo venga modificata gradualmente,
+  e indicheremo inoltre il tempo di transizione a 150 millisecondi.
+
+  applica quindi all'interno del selettore della card quest'ultima regola:
+  https://developer.mozilla.org/en-US/docs/Web/CSS/transition#syntax
+*/
